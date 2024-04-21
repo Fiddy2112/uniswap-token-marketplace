@@ -134,13 +134,3 @@ export const getAllHistory = async () => {
     return parseErrorMsg(err);
   }
 };
-
-function toWei(amount) {
-  const toWei = ethers.parseUnits(amount.toString());
-  return toWei.toString();
-}
-
-function parseErrorMsg(err) {
-  const json = JSON.parse(JSON.stringify(err));
-  return json?.reason || json?.error?.message;
-}

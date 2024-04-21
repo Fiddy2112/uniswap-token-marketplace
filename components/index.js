@@ -15,6 +15,8 @@ import Insta from "./SVG/Insta";
 import Logo from "./SVG/Logo";
 import Menu from "./SVG/Menu";
 import Twitter from "./SVG/Twitter";
+import ClipboardCheckIcon from "./SVG/ClipboardCheckIcon";
+import ClipboardIcon from "./SVG/ClipboardIcon";
 
 export {
   Header,
@@ -34,4 +36,6 @@ export {
   Logo,
   Menu,
   Twitter,
+  ClipboardCheckIcon,
+  ClipboardIcon,
 };
