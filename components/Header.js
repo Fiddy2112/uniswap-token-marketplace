@@ -50,7 +50,7 @@ const Header = () => {
             </li>
             <li className="flex">
               <a
-                className="flex items-center px-4 -mb-1 dark:border-transparent"
+                className="flex items-center px-4 -mb-1 dark:border-transparent hover:text-[#ffeaa7]"
                 ref={noreferrer}
                 href="/tokens"
               >
@@ -60,7 +60,7 @@ const Header = () => {
 
             <li className="flex">
               <a
-                className="flex items-center px-4 -mb-1 dark:border-transparent"
+                className="flex items-center px-4 -mb-1 dark:border-transparent hover:text-[#ffeaa7]"
                 ref={noreferrer}
                 href="#"
               >
@@ -70,7 +70,7 @@ const Header = () => {
 
             <li className="flex">
               <a
-                className="flex items-center px-4 -mb-1 dark:border-transparent"
+                className="flex items-center px-4 -mb-1 dark:border-transparent hover:text-[#ffeaa7]"
                 ref={noreferrer}
                 href="#"
               >

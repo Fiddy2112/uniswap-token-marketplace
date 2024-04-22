@@ -9,7 +9,8 @@ export default function Home() {
   return (
     <div className="bg-[#1A1A1A]">
       <Header />
-      {/* <HeroSection />
+      <HeroSection />
+      {/*
       <Card />
       <Footer /> */}
     </div>
