@@ -17,6 +17,9 @@ import Menu from "./SVG/Menu";
 import Twitter from "./SVG/Twitter";
 import ClipboardCheckIcon from "./SVG/ClipboardCheckIcon";
 import ClipboardIcon from "./SVG/ClipboardIcon";
+import Cog from "./SVG/Cog";
+import ArrowDown from "./SVG/ArrowDown";
+import ArrowUp from "./SVG/ArrowUp";
 
 export {
   Header,
@@ -38,4 +41,7 @@ export {
   Twitter,
   ClipboardCheckIcon,
   ClipboardIcon,
+  Cog,
+  ArrowDown,
+  ArrowUp,
 };
