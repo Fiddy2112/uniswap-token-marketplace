@@ -5,7 +5,7 @@ import { SwapComponent } from "./index";
 
 const HeroSection = () => {
   return (
-    <section className="bg-[#1A1A1A] text-gray-100">
+    <section className="bg-[#1A1A1A] text-gray-100 ">
       <div className="container flex flex-col lg:flex-row lg:justify-between justify-center lg:py-24 sm:py-12 p-6 mx-auto ">
         <div className="flex flex-col justify-center text-center p-6 rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
           <h1 className="text-5xl font-bold leading-0 sm:text-6xl">

@@ -20,6 +20,7 @@ import ClipboardIcon from "./SVG/ClipboardIcon";
 import Cog from "./SVG/Cog";
 import ArrowDown from "./SVG/ArrowDown";
 import ArrowUp from "./SVG/ArrowUp";
+import Plus from "./SVG/Plus";
 
 export {
   Header,
@@ -44,4 +45,5 @@ export {
   Cog,
   ArrowDown,
   ArrowUp,
+  Plus,
 };

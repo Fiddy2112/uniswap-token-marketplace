@@ -91,6 +91,7 @@ export const getTokenAddress = async (tokenName) => {
   try {
     const contractObj = await contract();
     const data = await contractObj.getTokenAddress(tokenName);
+    console.log("getTokenAddress", data);
     return data;
   } catch (err) {
     return parseErrorMsg(err);

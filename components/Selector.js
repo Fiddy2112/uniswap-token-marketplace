@@ -3,6 +3,7 @@ import {
   Button,
   Dropdown,
   DropdownItem,
+  DropdownMenu,
   DropdownTrigger,
 } from "@nextui-org/react";
 import {
@@ -28,6 +29,7 @@ const Selector = ({ defaultValue, ignoreValue, setToken, id }) => {
     { key: TRON, name: TRON },
     { key: MATIC, name: MATIC },
     { key: SHIBA, name: SHIBA },
+    { key: UNISWAP, name: UNISWAP },
   ];
 
   const [selectedItem, setSelectedItem] = useState();
@@ -47,31 +49,35 @@ const Selector = ({ defaultValue, ignoreValue, setToken, id }) => {
   }, [ignoreValue]);
 
   return (
-    <Dropdown>
+    <Dropdown className="bg-[#2c2f36]">
       <DropdownTrigger>
         <Button
-          css={{
+          className="font-bold text-sm py-4 px-8 text-white"
+          style={{
             backgroundColor:
-              selectedItem === DEFAULT_VALUE ? "#7765F3" : "#2c2f36",
+              selectedItem === DEFAULT_VALUE ? "#2c3e50" : "#2c2f36",
           }}
         >
           {selectedItem}
         </Button>
       </DropdownTrigger>
       <DropdownMenu
+        className="text-black bg-[#2c2f36]"
         aria-label="Dynamic Actions"
-        // onAction={(key) => {
-        //   setSelectedItem(key);
-        //   setToken(key);
-        // }}
+        items={menuItems}
+        onAction={(key) => {
+          setSelectedItem(key);
+          setToken(key);
+        }}
       >
         {(item) => (
           <DropdownItem
+            className="font-bold px-2 text-white"
+            aria-label={id}
             key={item.key}
-            shortcut="⌘C"
-            description="Copy the file link"
+            color={item.key === "delete" ? "error" : "default"}
           >
-            hei
+            {item.name}
           </DropdownItem>
         )}
       </DropdownMenu>
