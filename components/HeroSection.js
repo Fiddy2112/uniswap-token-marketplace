@@ -10,6 +10,7 @@ const HeroSection = () => {
         <div className="flex flex-col justify-center text-center p-6 rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
           <h1 className="text-5xl font-bold leading-0 sm:text-6xl">
             Token
+            <br className="lg:hidden" />
             <span className="text-[#ffeaa7]">Marketplace</span>
           </h1>
           <p className="mt-6 mb-8 text-lg sm:mb-12">

@@ -11,8 +11,7 @@ export default function Home() {
       <Header />
       <HeroSection />
       <Card />
-      {/*
-      <Footer /> */}
+      <Footer />
     </div>
   );
 }
